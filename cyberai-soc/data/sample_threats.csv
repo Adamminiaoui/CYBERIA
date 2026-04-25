@@ -1,0 +1,31 @@
+indicator_type,indicator_value,threat_type,source,confidence,severity,first_seen,last_seen,created_at
+url,http://login-microsoft-secure365.com/verify,phishing,OpenPhish,92,critical,2026-03-21 08:20:00,2026-04-24 09:10:00,2026-03-21 08:25:00
+url,http://dropbox-share-auth.net/session,phishing,PhishTank,88,high,2026-03-24 10:12:00,2026-04-23 11:10:00,2026-03-24 10:20:00
+url,http://paypa1-resolution-center.co/update,phishing,OpenPhish,95,critical,2026-03-28 06:40:00,2026-04-25 07:00:00,2026-03-28 06:45:00
+url,http://adobe-docs-cloud-download.info/open,malware,URLhaus,85,high,2026-04-01 13:10:00,2026-04-20 12:00:00,2026-04-01 13:15:00
+url,http://secure-bankofamerica-login.help/auth,phishing,PhishTank,91,critical,2026-04-02 09:40:00,2026-04-24 10:45:00,2026-04-02 09:50:00
+url,http://onedrive-sharepoint-file.live/access,phishing,OpenPhish,81,high,2026-04-03 07:15:00,2026-04-22 08:05:00,2026-04-03 07:20:00
+url,http://invoice-attachment-review.cc/open.php,malware,URLhaus,83,high,2026-04-04 14:30:00,2026-04-25 09:15:00,2026-04-04 14:40:00
+url,http://dhl-parcel-tracking-alerts.net/track,phishing,OpenPhish,77,medium,2026-04-06 11:05:00,2026-04-18 10:00:00,2026-04-06 11:10:00
+url,http://citibank-secure-message.center/login,phishing,PhishTank,90,critical,2026-04-07 05:25:00,2026-04-24 06:30:00,2026-04-07 05:30:00
+url,http://windows-update-kb-service.ru/install,malware,URLhaus,86,high,2026-04-08 15:45:00,2026-04-23 16:00:00,2026-04-08 15:50:00
+ip,185.193.88.17,c2,AbuseIPDB,94,critical,2026-03-20 01:10:00,2026-04-25 01:30:00,2026-03-20 01:15:00
+ip,91.240.118.73,malware,AlienVault OTX,84,high,2026-03-27 03:20:00,2026-04-21 03:45:00,2026-03-27 03:25:00
+ip,45.134.26.199,botnet,AbuseIPDB,79,high,2026-03-30 18:05:00,2026-04-19 18:20:00,2026-03-30 18:10:00
+ip,103.27.202.88,scanner,Spamhaus,71,medium,2026-04-01 22:40:00,2026-04-24 23:00:00,2026-04-01 22:45:00
+ip,198.12.77.54,c2,AlienVault OTX,87,high,2026-04-05 04:50:00,2026-04-25 05:10:00,2026-04-05 04:55:00
+ip,62.113.114.232,ransomware,AbuseIPDB,96,critical,2026-04-09 12:00:00,2026-04-25 12:30:00,2026-04-09 12:05:00
+ip,77.91.124.166,malware,URLhaus,82,high,2026-04-10 02:15:00,2026-04-23 02:40:00,2026-04-10 02:20:00
+ip,203.0.113.45,scanner,Spamhaus,68,medium,2026-04-11 17:30:00,2026-04-22 18:00:00,2026-04-11 17:35:00
+ip,146.70.18.201,botnet,AlienVault OTX,76,medium,2026-04-12 20:10:00,2026-04-24 20:30:00,2026-04-12 20:15:00
+ip,154.216.19.72,credential_theft,AbuseIPDB,89,high,2026-04-14 06:45:00,2026-04-25 07:25:00,2026-04-14 06:50:00
+domain,secure-m365-authenticate.com,phishing,OpenPhish,93,critical,2026-03-22 08:00:00,2026-04-25 08:30:00,2026-03-22 08:10:00
+domain,paypal-case-center.net,phishing,PhishTank,86,high,2026-03-25 09:10:00,2026-04-23 09:40:00,2026-03-25 09:15:00
+domain,google-drive-sharedocument.info,phishing,OpenPhish,80,high,2026-03-29 07:55:00,2026-04-21 08:10:00,2026-03-29 08:00:00
+domain,cdn-update-service.cc,malware,URLhaus,83,high,2026-04-02 16:20:00,2026-04-24 16:45:00,2026-04-02 16:25:00
+domain,zoom-security-notice.help,phishing,PhishTank,78,medium,2026-04-04 13:05:00,2026-04-17 13:20:00,2026-04-04 13:10:00
+domain,telegram-support-portal.xyz,credential_theft,OpenPhish,74,medium,2026-04-06 21:00:00,2026-04-23 21:20:00,2026-04-06 21:05:00
+domain,aws-console-alerts-mail.com,phishing,OpenPhish,88,high,2026-04-08 10:35:00,2026-04-25 10:50:00,2026-04-08 10:40:00
+domain,remote-access-sync.ru,c2,AlienVault OTX,91,critical,2026-04-10 19:10:00,2026-04-25 19:25:00,2026-04-10 19:15:00
+domain,ssl-vpn-companylogin.net,credential_theft,PhishTank,84,high,2026-04-13 05:40:00,2026-04-24 05:55:00,2026-04-13 05:45:00
+domain,crypto-airdrop-claimbonus.org,scam,Spamhaus,69,medium,2026-04-15 14:10:00,2026-04-22 14:30:00,2026-04-15 14:15:00
