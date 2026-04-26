@@ -503,6 +503,11 @@ function App() {
                       Note: auto import currently loads <strong>URLhaus + Feodo</strong>. MISP warninglists still
                       need manual import (or we can add an upload flow).
                     </p>
+                    <div className="full-drive-actions" style={{ marginTop: '0.65rem' }}>
+                      <a className="full-drive-download secondary" href="http://localhost:8501" target="_blank" rel="noreferrer">
+                        Open SOC dashboard (Streamlit)
+                      </a>
+                    </div>
                   </div>
                 )}
               </div>
@@ -600,10 +605,6 @@ function App() {
               ))}
             </div>
 
-            <div className="actions">
-              <button className="secondary">Full Report</button>
-              <button className="primary">Login with Gmail to save this report</button>
-            </div>
           </section>
         )}
       </main>
@@ -623,7 +624,7 @@ function App() {
           <div className="drift-bubble" aria-hidden="true">
             <p className="drift-bubble-title">Drift</p>
             <p className="drift-bubble-text">{assistantAnalysis}</p>
-            <a className="drift-bubble-cta" href="/dashboard" tabIndex={-1}>
+            <a className="drift-bubble-cta" href="http://localhost:8501" target="_blank" rel="noreferrer" tabIndex={-1}>
               If you want more information, open the dashboard →
             </a>
           </div>

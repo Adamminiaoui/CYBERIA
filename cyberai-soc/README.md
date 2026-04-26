@@ -6,8 +6,10 @@ A lightweight hackathon project that stores global cyber threat intelligence in 
 
 - Python
 - SQLite
+- MongoDB
 - Streamlit
 - Pandas
+- Scikit-learn
 - FastAPI (optional)
 
 ## Project Structure
@@ -81,6 +83,42 @@ The dashboard includes:
 - A styled indicator table with high/critical rows highlighted
 - Analytics charts for threat types, severity distribution, and activity over time
 - Live feed status and manual refresh controls
+- MongoDB workplace/global dataset view
+- Correlation between global IOCs and internal workplace observables
+- AI/modeling page for risk scoring, anomaly detection, trend prediction, and SOC narrative output
+
+## MongoDB Correlation + AI Modeling
+
+The upgraded PoC now keeps the original global dashboard and adds a second analysis layer:
+
+1. Global threat intelligence from SQLite live feeds and MongoDB datasets is normalized into one IOC schema.
+2. MongoDB workplace log collections are scanned for URLs, domains, IPs, and hashes.
+3. The correlation engine matches internal observables against global indicators.
+4. The modeling layer produces:
+   - explainable exposure risk scores
+   - critical/high/investigate/watchlist labels
+   - recommended SOC actions
+   - workplace anomaly detection
+   - threat trend forecasting
+   - a short SOC AI narrative
+
+Expected MongoDB database: `drift_db`
+
+Global-intel collections currently supported:
+
+- `malicious_urls`
+- `malicious_ips`
+- `misp_warnings`
+
+Any other collection in `drift_db` is treated as a workplace log collection. Useful fields include:
+
+- `url`, `domain`, `host`, `dns_query`
+- `src_ip`, `source_ip`, `dst_ip`, `destination_ip`
+- `user`, `username`, `email`
+- `host`, `hostname`, `machine`, `device`
+- `timestamp`, `event_time`, `created_at`
+
+If no workplace log collection exists yet, the Streamlit dashboard uses a clearly labeled in-memory demo stream so the hackathon pitch can still show the full pipeline without modifying MongoDB.
 
 ## Run the API
 
@@ -102,6 +140,9 @@ Available endpoints:
 - `GET /search?value=paypal`
 - `GET /refresh-status`
 - `POST /refresh`
+- `GET /mongo-status`
+- `GET /correlations`
+- `GET /model-summary`
 
 ## Notes
 
